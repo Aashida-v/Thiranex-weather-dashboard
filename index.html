@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="weather-container">
+
+        <h1>Weather Dashboard</h1>
+        <p>Check the current weather in your city.</p>
+
+        <!-- City Search -->
+        <form id="search-form">
+            <input
+                type="text"
+                id="city-input"
+                placeholder="Enter city name..."
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Status Message -->
+        <p id="message"></p>
+
+        <!-- Weather Information -->
+        <section id="weather-card" hidden>
+
+            <h2 id="city-name">City Name</h2>
+
+<div id="weather-icon">🌤️</div>
+
+<p id="weather-description">Weather condition</p>
+
+            <div class="temperature">
+                <span id="temperature">--</span>°C
+            </div>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <h3>Humidity</h3>
+                    <p id="humidity">--%</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Wind Speed</h3>
+                    <p id="wind-speed">-- km/h</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Feels Like</h3>
+                    <p id="feels-like">--°C</p>
+                </div>
+
+            </div>
+
+            <p id="last-updated"></p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
